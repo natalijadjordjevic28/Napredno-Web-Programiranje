@@ -1,0 +1,55 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<body><br><br><br><br>
+    <div class="container login-container">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+            </div><br>
+            <div class="row">
+                <div class="col-md-12 login-form-1">
+                    <h2>Log in</h2>
+                    <hr />
+                    <form (ngSubmit)="login()">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email *" name="email"
+                                [(ngModel)]="email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your Password *" name="sifra"
+                                [(ngModel)]="sifra" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" value="Login">Submit</button>
+
+                        </div>
+                        <div class="form-group">
+                            <a class="btnForgetPwd" routerLink="/register" routerLinkActive="active">Don't have an
+                                account?
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</body>

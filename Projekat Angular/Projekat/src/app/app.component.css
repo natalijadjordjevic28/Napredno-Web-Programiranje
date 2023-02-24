@@ -1,0 +1,24 @@
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+    border-color: rgb(230, 242, 125);
+
+  }
+  .navbar-nav li a:hover {
+    color: #d9ca22;
+}
+
+
+body {
+    
+    background-color: rgb(80, 168, 255);
+
+}

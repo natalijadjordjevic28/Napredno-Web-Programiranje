@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html>
+
+<body>
+    <div class="bd">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+            </div><br>
+            <h2>News</h2><br>
+
+
+            <table class="center" border="1">
+                <tr style="padding: 100px;">
+                    <td style="padding: 20px;">
+                        ID NEWS:
+                    </td>
+                    <td style="padding: 20px;">
+                        DESCRIPTION:
+                    </td>
+                    <td style="padding: 20px;">
+                        THE PICTURE:
+                    </td>
+                   
+                </tr>
+                <tr *ngFor="let vest of sveVesti">
+                    <td>{{vest.idVesti}}</td>
+                    <td>{{vest.opis}}</td>
+                    <td><img height="150" width="150" src="{{vest.slikaVest}}" /> </td>
+                   
+                   
+                </tr>
+            </table>
+            <br><br>
+            <div *ngIf="proveriUlogovanostAdmina()">
+                <form (ngSubmit)="delVest()" >
+                    The id of the news you want to delete:
+                    <input type="text" value="Id news" name="idVesti" [(ngModel)]="idVesti"> 
+                  
+                    <div><br>
+                    <input type="submit" class="btn btn-primary" value="Delete">
+                    </div>
+                </form>
+            </div>
+          
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body><br>
+    <div class="bd">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+              </div><br>
+              <h3>Adding news</h3>
+            <form #searchForm="ngForm" (ngSubmit)="dodajVesti()">
+                <div>
+                    <br>
+                    Description
+                    <input class="form-control" type="text" name="opis" placeholder="Short description" required/>
+                </div><br>
+                <div>
+                    Picture:
+                    <input class="form-control" type="text" name="slikaVest"  placeholder="URLPicture" required/>
+                </div>
+                <div><br>
+                    <button type="submit" class="btn btn-primary">Add news</button>
+                </div>
+            </form>
+            <br><br><br><br><br><br>
+           
+    
+        </div>
+    
+    </div>
+</body>

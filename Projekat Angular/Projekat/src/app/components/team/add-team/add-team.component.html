@@ -1,0 +1,36 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body><br>
+    <div class="bd">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+              </div><br>
+              <h3>Adding teams</h3>
+        <hr />
+            <form  #searchForm="ngForm" (ngSubmit)="dodajTim()">
+                <div>
+                    Name of team:
+                    <input class="form-control" type="text" name="imeTIma" placeholder="Name of team" required/>
+                </div><br>
+                <div>
+                   Logo of team:
+                    <input class="form-control" type="text" name="logoTima"  placeholder="Logo of team" required />
+                </div><br>
+                <div>
+                    Name of coach:
+                     <input class="form-control" type="text" name="imeTrenera"  placeholder="Name of coach" required />
+                 </div>
+
+                <div  class="col-12"><br>
+                    <button type="submit" class="btn btn-primary">Add team</button>
+                </div>
+            </form>
+            <br><br>
+    
+        </div>
+    
+    </div>
+</body>

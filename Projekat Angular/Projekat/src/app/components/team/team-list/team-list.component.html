@@ -1,0 +1,63 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html>
+
+<body>
+    <div class="bd">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+            </div><br>
+            <h2>Teams</h2><br>
+
+            <table class="center" border="1">
+                <tr>
+                    <td style="padding: 20px;">
+                        Team name:
+                    </td>
+                    <td>
+                        Logo:
+                    </td>
+                    <td>
+                        Coach name:
+                    </td>
+                </tr>
+                <tr *ngFor="let team of timovi">
+                    <td>{{team.imeTIma}}</td>
+                    <td><img height="100" width="100" src="{{team.logoTima}}" /> </td>
+                    <td>{{team.imeTrenera}}</td>
+                </tr>
+            </table>
+            <br><br>
+            <div>
+                <div class="centar">
+                    <form>
+                        <p style="text-decoration: inherit;"> Select the team whose players you want to see:
+                            <select class="select-red" #selectedTim (change)="timSelected(selectedTim.value)">
+                                <option *ngFor="let t of timovi" [value]="t.idTima">
+                                    {{ t.imeTIma }}
+                                </option>
+                            </select>
+                        </p>
+
+                        <div *ngIf="igraci != undefined">
+                            <div *ngFor="let igr of igraci">
+                                Ime igraca: {{igr.imeIgraca}}
+                            </div>
+
+
+                        </div>
+
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

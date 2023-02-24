@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html>
+
+<body>
+    <div class="bd">
+        <div class="box bg-color">
+            <div class="logo">
+                STRIM
+            </div><br>
+            <h2>Results Matchs:</h2><br>
+
+            <table class="center" border="1">
+                <tr>
+                    <td>
+                        Host:
+                    </td>
+                    <td>
+                        Guest:
+                    </td>
+                    <td >
+                        Number of Team1 points: Number of Team2 points:
+                    </td>
+                    <td>
+                        The venue:
+                    </td>
+                </tr>
+                <tr *ngFor="let utakmica of utakmice">
+                    <td>HOME</td>
+                    <td>GUEST</td>
+                    <td>{{utakmica.brojPoenaTIma}}: {{utakmica.brojPoenaTima1}} </td>
+                    <td>{{utakmica.mestoOdigravanja}}</td>
+
+
+
+                </tr>
+
+
+            </table>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
